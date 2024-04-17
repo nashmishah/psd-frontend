@@ -18,7 +18,8 @@ function App() {
       //   headers: {'Authorization': 'Bearer 5_5JLywfBdhmM5OWd-JVqiGEdIF2jEEh'}
       // });
       const response = await fetch(`https://oryx-eternal-oddly.ngrok-free.app/items/student_table/${id}`, {
-        headers: {'Authorization': 'Bearer 5_5JLywfBdhmM5OWd-JVqiGEdIF2jEEh'}
+        headers: {'Authorization': 'Bearer 5_5JLywfBdhmM5OWd-JVqiGEdIF2jEEh',
+        "ngrok-skip-browser-warning": "69420"}
       });
       console.log(response)
       const data = await response.json();
