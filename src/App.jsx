@@ -11,15 +11,15 @@ function App() {
   const selectButton = async () =>{
     try{
       // const response = await fetch(`http://localhost:3000/userdata?id=${id}`);
-      const response = await fetch(`http://localhost:8055/items/student_table/${id}`, {
-        headers: {'Authorization': 'Bearer 5_5JLywfBdhmM5OWd-JVqiGEdIF2jEEh'}
-      });
+      // const response = await fetch(`http://localhost:8055/items/student_table/${id}`, {
+      //   headers: {'Authorization': 'Bearer 5_5JLywfBdhmM5OWd-JVqiGEdIF2jEEh'}
+      // });
       // const response = await fetch(`https://psd-directus.dev.frp.slsx.io/items/student_table/${id}`, {
       //   headers: {'Authorization': 'Bearer 5_5JLywfBdhmM5OWd-JVqiGEdIF2jEEh'}
       // });
-      // const response = await fetch(`https://oryx-eternal-oddly.ngrok-free.app/items/student_table/${id}`, {
-      //   headers: {'Authorization': 'Bearer 5_5JLywfBdhmM5OWd-JVqiGEdIF2jEEh'}
-      // });
+      const response = await fetch(`https://oryx-eternal-oddly.ngrok-free.app/items/student_table/${id}`, {
+        headers: {'Authorization': 'Bearer 5_5JLywfBdhmM5OWd-JVqiGEdIF2jEEh'}
+      });
       console.log(response)
       const data = await response.json();
       console.log(data)
